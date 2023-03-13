@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Aleatorio 
+{
+    public static void main(String[] args) 
+    {
+        Scanner entrada = new Scanner(System.in);
+        
+        float aleatorio,redondeado;
+        int veces;
+        
+        System.out.println("Programa para generar números aleatorios:\n");
+        System.out.print("¿Cuántos números aleatorios quieres?: ");
+        veces = entrada.nextInt();
+        
+        for(int i=0;i<veces;i++)
+        {
+            aleatorio = (float) (Math.random()*10);
+            redondeado = Math.round(aleatorio);
+            System.out.println("Número aleatorio " + (i+1) + ":\n👉 " + aleatorio + " \nRedondeado 👉 " + redondeado + "\n");
+        }
+    }
+}
+
