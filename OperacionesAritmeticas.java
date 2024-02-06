@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Main 
@@ -16,25 +15,24 @@ public class Main
         System.out.print("Ingresa el segundo numero: ");
         n2 = sc.nextFloat();
         
-        
         //Salidas
-        float sum, res, mul; 
-        int div, mod;
+        float r; 
+        int residuo;
         
-        //Proceso
-        sum = n1 + n2;
-        res = n1 - n2;
-        mul = n1 * n2;
-        div = (int)(n1 / n2);
-        mod = (int)(n1 % n2);
+        //Proceso y salida
+        r = n1 + n2;
+        System.out.println("\n\n");
+        System.out.println(n1 + " + " + n2 + " = " + r);
         
-        //Mostrar resultados
-        System.out.println(n1 + " + " + n2 + " = " + sum);
-        System.out.println(n1 + " - " + n2 + " = " + res);
-        System.out.println(n1 + " * " + n2 + " = " + mul);
-        System.out.println(n1 + " / " + n2 + " = " + div);
-        System.out.println(n1 + " mod " + n2 + " = " + mod);
+        r = n1 - n2;
+        System.out.println(n1 + " - " + n2 + " = " + r);
+        
+        r = n1 * n2;
+        System.out.println(n1 + " * " + n2 + " = " + r);
+        
+        r = (n1 / n2);
+        residuo = (int)(n1 % n2);
+        System.out.println(n1 + " / " + n2 + " = " + (int)r + " residuo " + residuo);
         
     }
-    
 }
